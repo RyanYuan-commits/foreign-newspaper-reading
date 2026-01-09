@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "0971098f2b43ab59",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b71293d1e8c767d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca455595f5f833ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "外刊 & 论文/The Google File System.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Google File System"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c961b4adb9335be5",
+    "type": "split",
+    "children": [
+      {
+        "id": "0238edae8bf955f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33f584662d4804e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "eb2ff29c5705923d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "2925c52336a8a56f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "d0f829dedff6eb78",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "外刊 & 论文/The Google File System.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "The Google File System 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "42fb14289e632171",
+    "type": "split",
+    "children": [
+      {
+        "id": "e55f2464efc2da1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66dd6961546b61b4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "单词本/trial.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "trial 的反向链接列表"
+            }
+          },
+          {
+            "id": "d5d70a507cb897ac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "外刊 & 论文/The Google File System.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "The Google File System 的出链列表"
+            }
+          },
+          {
+            "id": "3b69ed2e3f46a5b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "43f7409bff7fe96e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "bdd6227c72f78220",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "smart-random-note:Open Random Note from Search": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "ca455595f5f833ec",
+  "lastOpenFiles": [
+    "外刊 & 论文/The Google File System.md",
+    "单词本/reduction.md",
+    "单词本/sidesteps.md",
+    "单词本/reopened.md",
+    "单词本/handle.md",
+    "单词本/corresponding.md",
+    "单词本/replicas.md",
+    "单词本/involvement.md",
+    "单词本/sophisticated.md",
+    "单词本/figure.md",
+    "单词本/coherence.md",
+    "单词本/eliminating.md",
+    "单词本/scalable.md",
+    "单词本/eliminate.md",
+    "单词本/bear.md",
+    "单词本/interact.md",
+    "单词本/orphaned.md",
+    "单词本/migration.md",
+    "单词本/lease.md",
+    "单词本/designate.md",
+    "单词本/replicated.md",
+    "附件",
+    "单词本/flaky.md",
+    "附件/GFS Architecture.png",
+    "单词本/architecture.md",
+    "单词本/assumptions.md",
+    "单词本/respectively.md",
+    "单词本/simultaneously.md",
+    "外刊 & 论文",
+    "模板",
+    "单词本"
+  ]
+}
