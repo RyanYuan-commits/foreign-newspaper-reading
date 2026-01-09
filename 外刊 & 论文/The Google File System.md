@@ -81,7 +81,7 @@ The client caches this information using the **file name** and **chunk index** a
 
 ### 2.5 Chunk Size
 
-Chunksize is one of the key design parameters. We have chosen 64 MB, which is much larger than typical file system blocksizes. Each chunkreplica is stored as a plain Linux file on a chunkserver and is extended only as needed. Lazy space allocation avoids wasting space due to internal fragmentation, perhaps the greatest objection against such a large chunk size.
+Chunk size is one of the key design parameters. We have chosen **64 MB**, which is much larger than typical file system blocksizes. Each chunk [[replicas|replica]] is stored as a plain Linux file on a chunk server and is extended only as needed. Lazy space allocation avoids wasting space due to internal [[fragmentation]], perhaps the greatest objection against such a large chunk size.
 
 A large chunksize offers several important advantages. First, it reduces clients’ need to [[interact]] with the master because reads and writes on the same chunkrequire only one initial request to the master for chunklocation information. The reduction is especially significant for our [[workload|workloads]] because applications mostly read and write large files sequentially. Even for small random reads, the client can comfortably cache all the chunklocation information for a multi-TB working set. Second, since on a large chunk, a client is more likely to perform many operations on a given chunk, it can reduce network overhead by keeping a persistent TCP connection to the chunkserver over an extended period of time. Third, it reduces the size of the metadata stored on the master. This allows us to keep the metadata in memory, which in turn brings other advantages that we will discuss in Section 2.6.1.
 

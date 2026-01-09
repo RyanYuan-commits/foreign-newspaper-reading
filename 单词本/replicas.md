@@ -1,3 +1,8 @@
+---
+aliases:
+  - replica
+---
+
 N-COUNT 复制品;仿制品
 A replica of something such as a statue, building, or weapon is an accurate copy of it.
 
