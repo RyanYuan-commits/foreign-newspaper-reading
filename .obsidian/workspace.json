@@ -211,8 +211,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "29d49f4b48003ade",
+  "active": "d5d70a507cb897ac",
   "lastOpenFiles": [
+    "单词本/norm.md",
     "单词本/fragmentation.md",
     "外刊 & 论文/The Google File System.md",
     "单词本/replica.md",
@@ -240,7 +241,6 @@
     "单词本/flaky.md",
     "附件/GFS Architecture.png",
     "单词本/architecture.md",
-    "单词本/assumptions.md",
     "外刊 & 论文",
     "模板",
     "单词本"

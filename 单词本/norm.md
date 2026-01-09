@@ -1,3 +1,8 @@
+---
+aliases:
+  - norms
+---
+
 N-COUNT 行为准则;规范
 Norms are ways of behaving that are considered normal in a particular society.
 
