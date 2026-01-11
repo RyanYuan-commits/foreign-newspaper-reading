@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0d45da58867e51b1",
+        "id": "03f1f3a7fb95c730",
         "type": "tabs",
         "children": [
           {
-            "id": "34d82882fa0907bc",
+            "id": "b7f7fee8f2741cba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "42fb14289e632171",
@@ -129,11 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "外刊 & 论文/The Google File System.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "The Google File System 的出链列表"
             }
           },
           {
@@ -180,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,7 +195,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34d82882fa0907bc",
+  "active": "b7f7fee8f2741cba",
   "lastOpenFiles": [
     "外刊 & 论文/The Google File System.md",
     "单词本/fragmentation.md",
