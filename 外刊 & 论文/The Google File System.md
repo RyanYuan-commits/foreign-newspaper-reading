@@ -92,3 +92,11 @@ However, hot spots did develop when GFS was first used by a batch-queue system: 
 ### 2.6    Metadata
 
 The master stores three major types of metadata: **the file and chunk namespaces**, **the mapping from files to chunks**, and **the locations of each chunk’s [[replicas]]**. All metadata is kept in the master’s **memory**. The first two types (namespaces and file-to-chunk mapping) are also **kept persistent** by logging [[mutation|mutations]] to an operation log stored on the master’s local diskand [[replicated]] on remote machines. Using a log allows us to update the master state simply, reliably, and without risking inconsistencies in the event of a master crash. The master does not store chunk location information persistently. Instead, it asks each chunkserver about its chunks at master startup and whenever a chunkserver joins the cluster.
+
+#### 2.6.1 In-Memory Data Structures
+
+Since metadata is stored in memory, master operations are fast. Furthermore, it is easy and efficient for the master to periodically scan through its entire state in the background. This [[periodic]] scanning is used to implement chunkgarbage collection, re-replication in the presence of chunkserver failures, and chunkmigration to balance load and diskspace usage across chunkservers. Sections 4.3 and 4.4 will discuss these activities further.
+
+One potential concern for this memory-only approach is that the number of chunks and hence the capacity of the whole system is limited by how much memory the master has. This is not a serious limitation in practice. The master maintains less than 64 bytes of metadata for each 64 MB chunk. Most chunks are full because most files contain many chunks, only the last of which may be partially filled. Similarly, the file namespace data typically requires less then 64 bytes per file because it stores file names compactly using prefix compression.
+
+If necessary to support even larger file systems, the cost of adding extra memory to the master is a small price to pay for the simplicity, reliability, performance, and flexibility we gain by storing the metadata in memory.
