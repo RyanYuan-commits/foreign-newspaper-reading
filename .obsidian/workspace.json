@@ -199,8 +199,9 @@
   },
   "active": "b7f7fee8f2741cba",
   "lastOpenFiles": [
-    "单词本/periodic.md",
+    "单词本/potential.md",
     "外刊 & 论文/The Google File System.md",
+    "单词本/periodic.md",
     "单词本/mutation.md",
     "附件/GFS Architecture.png",
     "单词本/fragmentation.md",
@@ -225,7 +226,6 @@
     "单词本/migration.md",
     "单词本/lease.md",
     "单词本/designate.md",
-    "单词本/replicated.md",
     "附件",
     "外刊 & 论文",
     "模板",
