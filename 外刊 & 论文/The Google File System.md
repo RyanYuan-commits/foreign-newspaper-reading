@@ -51,13 +51,13 @@ In designing a file system for our needs, we have been guided by [[assumptions]]
 	
 - High [[sustained]] [[bandwidth]] is more important than low latency. Most of our target applications place a [[premium]] on processing data in [[bulk]] at a high rate, while few have [[stringent]] response time requirements for an individual read or write.
 
-### 2.2 Interface
+### 2.2    Interface
 
 GFS provides a familiar file system interface, though it does not implement a standard API such as POSIX. Files are organized [[hierarchically]] in directories and [[identify|identified]] by pathnames. We support the usual operations to create, delete, open, close, read, and write files. 
 
 Moreover, GFS has **snapshot** and **record append operations**. Snapshot creates a copy of a file or a directory tree at low cost. Record append allows multiple clients to append data to the same file concurrently while guaranteeing the atomicity of each individual client’s append. It is useful for implementing **multi-way merge results** and **producer-consumer queues** that many clients can [[simultaneously]] append to without additional locking. We have found these types of files to be invaluable in building large [[distributed]] applications. Snapshot and record append are discussed further in Sections 3.4 and 3.3 [[respectively]].
 
-### 2.3 [[Architecture]] 
+### 2.3    [[Architecture]] 
 
 A GFS cluster consists of **a single master** and **multiple chunkservers** and is accessed by **multiple clients**, as shown in [[Figure]] 1. Each of these is typically a [[commodity]] Linux machine running a user-level server process. It is easy to run both a chunkserver and a client on the same machine, as long as machine resources permit and the lower reliability caused by running possibly [[flaky]] application code is acceptable. 
 
@@ -71,7 +71,7 @@ The master maintains **all file system metadata**. This includes the **namespace
 
 Neither the client nor the chunk server caches file data. Client caches offer little benefit because most applications stream through huge files or have working sets too large to be cached. Not having them simplifies the client and the overall system by [[eliminate|eliminating]] cache [[coherence]] issues. (Clients do cache metadata, however.) Chunkservers need not cache file data because chunks are stored as local files and so Linux’s buffer cache already keeps frequently accessed data in memory.
 
-### 2.4 Single Master
+### 2.4    Single Master
 
 Having a single master [[vastly]] **simplifies our design** and enables the master to make [[sophisticated]] chunk placement and replication decisions using global knowledge. However, we must minimize its [[involvement]] in reads and writes so that it does not become a bottleneck. **Clients never read and write file data through the master**. Instead, a client asks the master which chunkservers it should contact. It caches this information for a limited time and interacts with the chunkservers directly for many subsequent operations. 
 
@@ -79,12 +79,16 @@ Let us explain the interactions for a simple read with reference to [[Figure]] 1
 
 The client caches this information using the **file name** and **chunk index** as the key. The client then sends a request to one of the [[replicas]], most likely the closest one. The request specifies the chunk [[handle]] and a byte range [[within]] that chunk. Further reads of the same chunk require no more client-master interaction until the cached information expires or the file is [[reopened]]. In fact, the client typically asks for multiple chunks in the same request and the master can also include the information for chunks immediately following those requested. This extra information [[sidesteps]] several future client-master interactions at practically no extra cost.
 
-### 2.5 Chunk Size
+### 2.5    Chunk Size
 
 Chunk size is one of the key design parameters. We have chosen **64 MB**, which is much larger than typical file system blocksizes. Each chunk [[replicas|replica]] is stored as a plain Linux file on a chunk server and is extended only as needed. Lazy space allocation avoids wasting space due to internal [[fragmentation]], perhaps the greatest objection against such a large chunk size.
 
-A large chunksize offers several important advantages. First, it reduces clients’ need to [[interact]] with the master because reads and writes on the same chunkrequire only one initial request to the master for chunklocation information. The reduction is especially significant for our [[workload|workloads]] because applications mostly read and write large files sequentially. Even for small random reads, the client can comfortably cache all the chunklocation information for a multi-TB working set. Second, since on a large chunk, a client is more likely to perform many operations on a given chunk, it can reduce network overhead by keeping a persistent TCP connection to the chunkserver over an extended period of time. Third, it reduces the size of the metadata stored on the master. This allows us to keep the metadata in memory, which in turn brings other advantages that we will discuss in Section 2.6.1.
+A large chunksize offers several important advantages. First, it reduces clients’ need to [[interact]] with the master because reads and writes on the same chunkrequire only one initial request to the master for chunklocation information. The reduction is especially significant for our [[workload|workloads]] because applications mostly read and write large files sequentially. Even for small random reads, the client can comfortably cache all the chunk location information for a multi-TB working set. Second, since on a large chunk, a client is more likely to perform many operations on a given chunk, it can reduce network overhead by keeping a persistent TCP connection to the chunkserver over an extended period of time. Third, it reduces the size of the metadata stored on the master. This allows us to keep the metadata in memory, which in turn brings other advantages that we will discuss in Section 2.6.1.
 
 On the other hand, a large chunksize, even with lazy space allocation, has its disadvantages. A small file consists of a small number of chunks, perhaps just one. The chunkservers storing those chunks may become hot spots if many clients are accessing the same file. In practice, hot spots have not been a major issue because our applications mostly read large multi-chunkfiles sequentially.
 
-However, hot spots did develop when GFS was first used by a batch-queue system: an executable was written to GFS as a single-chunkfile and then started on hundreds of machines at the same time. The few chunkservers storing this executable were overloaded by hundreds of simultaneous requests. We fixed this problem by storing such executables with a higher replication factor and by making the batchqueue system stagger application start timesjj. A potential long-term solution is to allow clients to read data from other clients in such situations.
+However, hot spots did develop when GFS was first used by a batch-queue system: an executable was written to GFS as a single-chunkfile and then started on hundreds of machines at the same time. The few chunk servers storing this executable were overloaded by hundreds of simultaneous requests. We fixed this problem by storing such executables with a higher replication factor and by making the batchqueue system stagger application start timesjj. A potential long-term solution is to allow clients to read data from other clients in such situations.
+
+### 2.6    Metadata
+
+The master stores three major types of metadata: the file and chunknamespaces, the mapping from files to chunks, and the locations of each chunk’s [[replicas]]. All metadata is kept in the master’s memory. The first two types (namespaces and file-to-chunkmapping) are also kept persistent by logging mutations to an operation log stored on the master’s local diskand [[replicated]] on remote machines. Using a log allows us to update the master state simply, reliably, and without risking inconsistencies in the event of a master crash. The master does not store chunklocation information persistently. Instead, it asks each chunkserver about its chunks at master startup and whenever a chunkserver joins the cluster.

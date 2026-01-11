@@ -180,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,7 +196,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5d70a507cb897ac",
+  "active": "b7f7fee8f2741cba",
   "lastOpenFiles": [
     "外刊 & 论文/The Google File System.md",
     "单词本/fragmentation.md",
