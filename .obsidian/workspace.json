@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "内容/The Google File System.md",
+                "file": "内容/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Google File System"
+              "title": "未命名"
             }
           }
         ]
@@ -196,10 +196,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "33f584662d4804e2",
+  "active": "b7f7fee8f2741cba",
   "lastOpenFiles": [
-    "单词本/hence.md",
     "内容/The Google File System.md",
+    "内容/未命名.md",
+    "单词本/hence.md",
     "单词本/potential.md",
     "单词本/periodic.md",
     "单词本/mutation.md",
@@ -224,7 +225,6 @@
     "单词本/interact.md",
     "单词本/orphaned.md",
     "单词本/migration.md",
-    "单词本/lease.md",
     "附件",
     "内容",
     "模板",
