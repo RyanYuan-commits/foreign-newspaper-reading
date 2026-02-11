@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "ccf4565dda064a65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "单词本/utilities.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "utilities"
+            }
+          },
+          {
             "id": "d4658311ea575058",
             "type": "leaf",
             "state": {
@@ -63,7 +77,8 @@
               "title": "facility"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,12 +186,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "内容/Class Timer.md",
+                "file": "单词本/utilities.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Class Timer 的出链列表"
+              "title": "utilities 的出链列表"
             }
           },
           {
@@ -239,10 +254,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b7f7fee8f2741cba",
+  "active": "ccf4565dda064a65",
   "lastOpenFiles": [
-    "单词本/arbitrarily.md",
+    "单词本/therein.md",
+    "单词本/versatile.md",
+    "单词本/equivalent.md",
     "内容/Class Timer.md",
+    "单词本/utilities.md",
+    "单词本/arbitrarily.md",
+    "单词本/guarantee.md",
     "单词本/hogs.md",
     "单词本/facility.md",
     "内容/The Google File System.md",
@@ -263,11 +283,6 @@
     "单词本/involvement.md",
     "单词本/sophisticated.md",
     "单词本/figure.md",
-    "单词本/coherence.md",
-    "单词本/eliminating.md",
-    "单词本/scalable.md",
-    "单词本/eliminate.md",
-    "单词本/bear.md",
     "附件",
     "内容",
     "模板",
