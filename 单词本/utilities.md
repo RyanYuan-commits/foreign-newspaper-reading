@@ -2,7 +2,6 @@
 aliases:
   - utility
 ---
-
 ## N-UNCOUNT 功用;效用;实用
 
 > The utility of something is its usefulness.
