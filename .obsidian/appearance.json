@@ -3,5 +3,6 @@
   "interfaceFontFamily": "Times New Roman",
   "monospaceFontFamily": "Times New Roman",
   "baseFontSize": 20,
-  "cssTheme": "Minimal"
+  "cssTheme": "Minimal",
+  "theme": "system"
 }
