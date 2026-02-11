@@ -67,9 +67,9 @@ Date twoSecondsLaterAsDate = Date.from(twoSecondsLater.atZone(ZoneId.systemDefau
 new Timer().schedule(new DatabaseMigrationTask(oldDatabase, newDatabase), twoSecondsLaterAsDate);
 ```
 
-As we can see, we give the [[migration]] task and the date of execution to the schedule() method.
+As we can see, we give the [[migration]] task and the date of execution to the `schedule()` method. 
 
-Then the [[migration]] is executed at the time indicated by twoSecondsLater:
+Then the [[migration]] is executed at the time indicated by `twoSecondsLater`:
 
 ```java
 while (LocalDateTime.now().isBefore(twoSecondsLater)) {
@@ -83,11 +83,7 @@ Before that moment, the [[migration]] doesn’t occur.
 
 ## 3. Schedule a Repeatable a Task
 
-Now that we’ve covered how to schedule the single execution of a task let’s see how to deal with repeatable tasks.
-
-Once again, the Timer class offers multiple possibilities. We can set up the repetition to observe either a fixed delay or a fixed rate.
-
-A fixed delay means that the execution will start after a period of time after the moment the last execution started, even if it was delayed (therefore being itself delayed).
+Now that we’ve covered how to schedule the single execution of a task let’s see how to deal with repeatable tasks. Once again, the Timer class offers multiple possibilities. We can set up the repetition to [[observe]] either a fixed delay or a fixed rate. A fixed delay means that the execution will start after a period of time after the moment the last execution started, even if it was delayed (therefore being itself delayed).
 
 Let’s say we want to schedule a task every two seconds, with the first execution taking one second and the second one taking two but being delayed by one second. Then the third execution starts at the fifth second:
 
@@ -109,13 +105,9 @@ Let’s reuse our previous example. With a fixed rate, the second task will star
 |-----2s-----|-----2s-----|--T3--|
 ```
 
-Now that we’ve covered these two principles let’s see how we can use them.
+Now that we’ve covered these two principles let’s see how we can use them. To use fixed-delay scheduling, there are two more overloads of the schedule() method, each taking an extra parameter stating the periodicity in milliseconds. Why two overloads? Because there’s still the possibility of starting the task at a certain moment or after a certain delay.
 
-To use fixed-delay scheduling, there are two more overloads of the schedule() method, each taking an extra parameter stating the periodicity in milliseconds.
-
-Why two overloads? Because there’s still the possibility of starting the task at a certain moment or after a certain delay.
-
-As for the fixed-rate scheduling, we have the two scheduleAtFixedRate() methods, which also take the periodicity in milliseconds. Again, we have one method to start the task at a given date and time and another to start it after a given delay.
+As for the fixed-rate scheduling, we have the two `scheduleAtFixedRate()` methods, which also take the periodicity in milliseconds. Again, we have one method to start the task at a given date and time and another to start it after a given delay.
 
 It’s also worth mentioning that, if a task takes more time than the period to execute, it delays the whole chain of executions, whether we’re using fixed-delay or fixed-rate.
 
