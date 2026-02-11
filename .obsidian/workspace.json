@@ -4,24 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "f1e328baab32aa95",
+        "id": "c914f46b92184ddf",
         "type": "tabs",
         "children": [
           {
-            "id": "69f61396812d9d7c",
+            "id": "d7a8d1f53fddb891",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "内容/Java Timer.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "Java Timer"
             }
+          },
+          {
+            "id": "4a53acd1b04f7c59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "单词本/instant.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "instant"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,6 +114,16 @@
               "icon": "lucide-list",
               "title": "The Google File System 的大纲"
             }
+          },
+          {
+            "id": "bdd6227c72f78220",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ]
       }
@@ -105,12 +141,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "66dd6961546b61b4",
+            "id": "82e3682213d72eb1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "内容/Java Timer.md",
+                "file": "单词本/instant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,17 +156,21 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Java Timer 的反向链接列表"
+              "title": "instant 的反向链接列表"
             }
           },
           {
-            "id": "bdd6227c72f78220",
+            "id": "e0e55ad07ee2ec6a",
             "type": "leaf",
             "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "type": "outgoing-link",
+              "state": {
+                "file": "单词本/instant.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "instant 的出链列表"
             }
           },
           {
@@ -162,11 +202,13 @@
               "title": "添加笔记属性"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,9 +223,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "66dd6961546b61b4",
+  "active": "4a53acd1b04f7c59",
   "lastOpenFiles": [
+    "单词本/instant.md",
     "内容/Java Timer.md",
+    "单词本/migrate.md",
+    "单词本/legacy.md",
+    "单词本/migration.md",
+    "内容/The Google File System.md",
     "内容/Class Timer.md",
     "单词本/arbitrarily.md",
     "单词本/hogs.md",
@@ -193,7 +240,6 @@
     "单词本/versatile.md",
     "单词本/equivalent.md",
     "单词本/guarantee.md",
-    "内容/The Google File System.md",
     "单词本/hence.md",
     "单词本/potential.md",
     "单词本/periodic.md",
@@ -206,10 +252,6 @@
     "单词本/reduction.md",
     "单词本/sidesteps.md",
     "单词本/reopened.md",
-    "单词本/handle.md",
-    "单词本/corresponding.md",
-    "单词本/involvement.md",
-    "单词本/sophisticated.md",
     "附件",
     "内容",
     "模板",

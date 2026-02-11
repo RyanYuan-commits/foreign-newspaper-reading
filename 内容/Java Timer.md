@@ -24,17 +24,17 @@ public void givenUsingTimer_whenSchedulingTaskOnce_thenCorrect() {
 }
 ```
 
-This performs the task after a certain delay, which we gave as the second parameter of the schedule() method. In the next section, we’ll see how to schedule a task at a given date and time.
+This performs the task after a certain delay, which we gave as the second parameter of the `schedule()` method. In the next section, we’ll see how to schedule a task at a given date and time.
 
-Note that if we’re running this as a JUnit test, we should add a Thread.sleep(delay * 2) call to allow the Timer’s thread to run the task before the Junit test stops executing.
+Note that if we’re running this as a JUnit test, we should add a `Thread.sleep(delay * 2)` call to allow the Timer’s thread to run the task before the Junit test stops executing.
 
 ### 2.2. At a Given Date and Time
 
-Now let’s look at the Timer#schedule(TimerTask, Date) method, which takes a Date instead of a long as its second parameter. This allows us to schedule the task at a certain instant rather than after a delay.
+Now let’s look at the `Timer#schedule(TimerTask, Date)` method, which takes a Date instead of a long as its second parameter. This allows us to schedule the task at a certain instant rather than after a delay. 
 
-This time, let’s imagine we have an old legacy database and want to migrate its data into a new database with a better schema.
+This time, let’s imagine we have an old [[legacy]] database and want to [[migrate]] its data into a new database with a better schema.
 
-We can create a DatabaseMigrationTask class that will handle this migration:
+We can create a `DatabaseMigrationTask` class that will [[handle]] this [[migration]]:
 
 ```java
 public class DatabaseMigrationTask extends TimerTask {
@@ -53,9 +53,9 @@ public class DatabaseMigrationTask extends TimerTask {
 }
 ```
 
-For simplicity, we represent the two databases by a List of Strings. Simply put, our migration consists of putting the data from the first list into the second.
+For simplicity, we represent the two databases by a List of Strings. Simply put, our [[migration]] consists of putting the data from the first list into the second.
 
-To perform this migration at the desired instant, we’ll have to use the overloaded version of the schedule() method:
+To perform this [[migration]] at the desired [[instant]], we’ll have to use the overloaded version of the `schedule()` method:
 
 ```java
 List<String> oldDatabase = Arrays.asList("Harrison Ford", "Carrie Fisher", "Mark Hamill");
@@ -67,9 +67,9 @@ Date twoSecondsLaterAsDate = Date.from(twoSecondsLater.atZone(ZoneId.systemDefau
 new Timer().schedule(new DatabaseMigrationTask(oldDatabase, newDatabase), twoSecondsLaterAsDate);
 ```
 
-As we can see, we give the migration task and the date of execution to the schedule() method.
+As we can see, we give the [[migration]] task and the date of execution to the schedule() method.
 
-Then the migration is executed at the time indicated by twoSecondsLater:
+Then the [[migration]] is executed at the time indicated by twoSecondsLater:
 
 ```java
 while (LocalDateTime.now().isBefore(twoSecondsLater)) {
@@ -79,7 +79,7 @@ while (LocalDateTime.now().isBefore(twoSecondsLater)) {
 assertThat(newDatabase).containsExactlyElementsOf(oldDatabase);
 ```
 
-Before that moment, the migration doesn’t occur.
+Before that moment, the [[migration]] doesn’t occur.
 
 ## 3. Schedule a Repeatable a Task
 
