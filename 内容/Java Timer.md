@@ -83,7 +83,11 @@ Before that moment, the [[migration]] doesn’t occur.
 
 ## 3. Schedule a Repeatable a Task
 
-Now that we’ve covered how to schedule the single execution of a task let’s see how to deal with repeatable tasks. Once again, the Timer class offers multiple possibilities. We can set up the repetition to [[observe]] either a fixed delay or a fixed rate. A fixed delay means that the execution will start after a period of time after the moment the last execution started, even if it was delayed (therefore being itself delayed).
+Now that we’ve covered how to schedule the single execution of a task let’s see how to deal with repeatable tasks. 
+
+Once again, the Timer class offers multiple possibilities. We can set up the repetition to [[observe]] either a fixed delay or a fixed rate. 
+
+A **fixed delay** means that the execution will start after a period of time after the moment the last execution finished, even if it was delayed (therefore being itself delayed).
 
 Let’s say we want to schedule a task every two seconds, with the first execution taking one second and the second one taking two but being delayed by one second. Then the third execution starts at the fifth second:
 
@@ -94,7 +98,7 @@ Let’s say we want to schedule a task every two seconds, with the first executi
 |-----2s-----|--1s--|-----2s-----|--T3--|
 ```
 
-On the other hand, a fixed rate means that each execution will respect the initial schedule, no matter if a previous execution has been delayed.
+On the other hand, **a fixed rate** means that each execution will respect the initial schedule, no matter if a previous execution has been delayed.
 
 Let’s reuse our previous example. With a fixed rate, the second task will start after three seconds (because of the delay), but the third one will start after four seconds (respecting the initial schedule of one execution every two seconds):
 
