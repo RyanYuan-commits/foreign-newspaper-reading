@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c914f46b92184ddf",
+        "id": "bd1df70f75ee2c62",
         "type": "tabs",
         "children": [
           {
-            "id": "d7a8d1f53fddb891",
+            "id": "a22b50e3b0a5e60c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "内容/Class Timer.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Class Timer"
+              "title": "新标签页"
             }
           }
         ]
@@ -120,7 +115,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "内容/Class Timer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +124,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Class Timer 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -139,12 +133,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "内容/Class Timer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Class Timer 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -197,8 +190,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d7a8d1f53fddb891",
+  "active": "a22b50e3b0a5e60c",
   "lastOpenFiles": [
+    "内容/Class Timer.md",
     "内容/Java Timer.md",
     "单词本/observe.md",
     "单词本/instant.md",
@@ -206,7 +200,6 @@
     "单词本/legacy.md",
     "单词本/migration.md",
     "内容/The Google File System.md",
-    "内容/Class Timer.md",
     "单词本/arbitrarily.md",
     "单词本/hogs.md",
     "单词本/facility.md",
