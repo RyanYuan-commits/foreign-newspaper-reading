@@ -35,5 +35,6 @@
   "workspace:goto-tab-1": [],
   "workspace:goto-tab-2": [],
   "workspace:goto-tab-3": [],
-  "workspace:goto-tab-4": []
+  "workspace:goto-tab-4": [],
+  "markdown:toggle-preview": []
 }
