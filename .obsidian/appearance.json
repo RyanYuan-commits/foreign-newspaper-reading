@@ -1,8 +1,8 @@
 {
-  "textFontFamily": "Times New Roman",
+  "textFontFamily": "Maple Mono NF CN",
   "interfaceFontFamily": "Times New Roman",
-  "monospaceFontFamily": "Times New Roman",
+  "monospaceFontFamily": "Maple Mono NF CN",
   "baseFontSize": 20,
-  "cssTheme": "Minimal",
+  "cssTheme": "Things",
   "theme": "system"
 }

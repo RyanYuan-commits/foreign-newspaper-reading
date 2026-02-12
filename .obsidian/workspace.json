@@ -30,30 +30,6 @@
               "icon": "lucide-file",
               "title": "Getting Started with the G1 Garbage Collector"
             }
-          },
-          {
-            "id": "5a1b4e84158a1afc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "单词本/internally.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "internally"
-            }
           }
         ]
       }
@@ -232,8 +208,9 @@
   },
   "active": "1b051366e5bae7ea",
   "lastOpenFiles": [
-    "单词本/internally.md",
+    "单词本/underlying.md",
     "内容/Getting Started with the G1 Garbage Collector.md",
+    "单词本/internally.md",
     "内容/The Google File System.md",
     "内容/Java Timer.md",
     "内容/Class Timer.md",
@@ -258,7 +235,6 @@
     "单词本/fragmentation.md",
     "单词本/norm.md",
     "单词本/replica.md",
-    "单词本/replicas.md",
     "附件",
     "内容",
     "模板",

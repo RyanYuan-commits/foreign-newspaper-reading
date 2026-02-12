@@ -1,0 +1,11 @@
+{
+  "things-style@@mobile-black-background": true,
+  "things-style@@active-line": true,
+  "things-style@@fancy-code": true,
+  "things-style@@fancy-highlight": true,
+  "things-style@@link-decoration": "None",
+  "things-style@@link-external-decoration": "None",
+  "things-style@@h1-size": "1.5em",
+  "things-style@@h2-size": "1.3em",
+  "things-style@@h4-size": "1.15em"
+}
