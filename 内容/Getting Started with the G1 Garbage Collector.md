@@ -56,11 +56,11 @@ The JDK and the JRE share the Java Application Programming Interfaces ([Java API
 
 The Java Virtual Machine (JVM) is an **abstract computing machine**. The JVM is a program that looks like a machine to the programs written to execute in it. This way, Java programs are written to the same set of interfaces and libraries. Each JVM implementation for a specific operating system, translates the Java programming instructions into instructions and commands that run on the local operating system. This way, Java programs achieve platform independence.
 
-The first prototype implementation of the Java virtual machine, done at Sun Microsystems, Inc., [[emulated]] the Java virtual machine instruction set in software hosted by a handheld device that resembled a contemporary Personal Digital Assistant (PDA). Oracle's current implementations emulate the Java virtual machine on mobile, desktop and server devices, but the Java virtual machine does not assume any particular implementation technology, host hardware, or host operating system. It is not inherently interpreted, but can just as well be implemented by compiling its instruction set to that of a silicon CPU. It may also be implemented in microcode or directly in silicon.
+The first prototype implementation of the Java virtual machine, done at Sun Microsystems, Inc., [[emulated]] the Java virtual machine instruction set in software hosted by a [[handheld]] device that resembled a contemporary Personal Digital Assistant (PDA). Oracle's current implementations emulate the Java virtual machine on mobile, desktop and server devices, but the Java virtual machine does not assume any particular implementation technology, host hardware, or host operating system. It is not [[inherently]] interpreted, but can just as well be implemented by compiling its instruction set to that of a silicon CPU. It may also be implemented in microcode or directly in silicon.
 
 The Java virtual machine knows nothing of the Java programming language, only of a particular binary format, the class file format. A class file contains Java virtual machine instructions (or bytecodes) and a symbol table, as well as other ancillary information.
 
-For the sake of security, the Java virtual machine imposes strong syntactic and structural constraints on the code in a class file. However, any language with functionality that can be expressed in terms of a valid class file can be hosted by the Java virtual machine. Attracted by a generally available, machine-independent platform, implementors of other languages can turn to the Java virtual machine as a delivery vehicle for their languages. (1) [The Java Virtual Machine](http://docs.oracle.com/javase/specs/jvms/se7/html/jvms-1.html)
+For the sake of security, the Java virtual machine imposes strong [[syntactic]] and structural constraints on the code in a class file. However, any language with functionality that can be expressed in terms of a valid class file can be hosted by the Java virtual machine. Attracted by a generally available, machine-independent platform, implementors of other languages can turn to the Java virtual machine as a delivery vehicle for their languages. (1) [The Java Virtual Machine](http://docs.oracle.com/javase/specs/jvms/se7/html/jvms-1.html)
 
 ### Exploring the JVM Architecture
 
@@ -80,15 +80,13 @@ The key components of the JVM that relate to performance are highlighted in the 
 
 There are three components of the JVM that are focused on when tuning performance. The _heap_ is where your object data is stored. This area is then managed by the garbage collector selected at startup. Most tuning options relate to sizing the heap and choosing the most appropriate garbage collector for your situation. The JIT compiler also has a big impact on performance but rarely requires tuning with the newer versions of the JVM.
 
- 
-
 ### Performance Basics
 
 Typically, when tuning a Java application, the focus is on one of two main goals: responsiveness or throughput. We will refer back to these concepts as the tutorial progresses.
 
 #### Responsiveness
 
-Responsiveness refers to how quickly an application or system responds with a requested piece of data. Examples include:
+[[Responsiveness]] refers to how quickly an application or system responds with a requested piece of data. Examples include:
 
 - How quickly a desktop UI responds to an event
 - How fast a website returns a page
@@ -96,7 +94,7 @@ Responsiveness refers to how quickly an application or system responds with a re
 
 For applications that focus on responsiveness, large pause times are not acceptable. The focus is on responding in short periods of time.
 
-#### Throughput
+#### [[Throughput]]
 
 Throughput focuses on maximizing the amount of work by an application in a specific period of time. Examples of how throughput might be measured include:
 
