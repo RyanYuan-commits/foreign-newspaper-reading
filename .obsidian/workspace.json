@@ -176,7 +176,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5
+    "width": 315.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,8 +194,9 @@
   },
   "active": "79bd541e731c81f5",
   "lastOpenFiles": [
-    "单词本/manipulation.md",
+    "单词本/emulated.md",
     "内容/Getting Started with the G1 Garbage Collector.md",
+    "单词本/manipulation.md",
     "单词本/underlying.md",
     "单词本/internally.md",
     "内容/The Google File System.md",
@@ -219,7 +221,6 @@
     "单词本/mutation.md",
     "附件/GFS Architecture.png",
     "单词本/fragmentation.md",
-    "单词本/norm.md",
     "附件",
     "内容",
     "模板",
