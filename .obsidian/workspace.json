@@ -201,7 +201,9 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "smart-random-note:Open Random Note from Search": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "79bd541e731c81f5",
