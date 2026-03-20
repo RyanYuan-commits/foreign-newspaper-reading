@@ -99,8 +99,7 @@
               "title": "Translate: coordination"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "单词本/primitives.md",
+                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +208,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "primitives 的反向链接列表"
+              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的反向链接列表"
             }
           },
           {
@@ -247,12 +246,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "单词本/primitives.md",
+                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "primitives 的出链列表"
+              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的出链列表"
             }
           }
         ],
@@ -276,7 +275,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0b075d05aeb1b1ed",
+  "active": "a5dcf1238498f152",
   "lastOpenFiles": [
     "单词本/primitives.md",
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
