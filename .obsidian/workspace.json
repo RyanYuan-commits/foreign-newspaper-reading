@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2bc3a8aeaae1e1e5",
+        "id": "78dfcb4ea4829aec",
         "type": "tabs",
         "children": [
           {
-            "id": "09d9fed078c7e5c1",
+            "id": "b123316689cd501e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -113,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "42fb14289e632171",
@@ -124,25 +123,6 @@
         "id": "e55f2464efc2da1e",
         "type": "tabs",
         "children": [
-          {
-            "id": "82e3682213d72eb1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-coming-in",
-              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的反向链接列表"
-            }
-          },
           {
             "id": "3b69ed2e3f46a5b7",
             "type": "leaf",
@@ -173,15 +153,36 @@
             }
           },
           {
-            "id": "0c89bd0c39790a6b",
+            "id": "e03c91f010379b38",
             "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的反向链接列表"
+            }
+          },
+          {
+            "id": "da3aaceee010f48b",
+            "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "outgoing-link",
               "state": {
                 "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
-                "linksCollapsed": true,
+                "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
+              "pinned": true,
               "icon": "links-going-out",
               "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的出链列表"
             }
@@ -207,11 +208,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "09d9fed078c7e5c1",
+  "active": "b123316689cd501e",
   "lastOpenFiles": [
+    "单词本/[[[[[[[[[[[[[[[[[[[[[[Throughput.md",
+    "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+    "附件/Pasted image 20260320181811.png",
     "附件/Pasted image 20260320181736.png",
     "单词本/ensemble.md",
-    "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
     "单词本/primitives.md",
     "单词本/parlance.md",
     "单词本/hierarchal.md",
