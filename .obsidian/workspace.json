@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications"
             }
-          },
-          {
-            "id": "e25192ac12e366b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "单词本/notoriously.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "notoriously"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "单词本/notoriously.md",
+                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +140,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "notoriously 的反向链接列表"
+              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的反向链接列表"
             }
           },
           {
@@ -203,12 +178,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "单词本/notoriously.md",
+                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "notoriously 的出链列表"
+              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的出链列表"
             }
           }
         ],
@@ -232,9 +207,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e25192ac12e366b3",
+  "active": "a5dcf1238498f152",
   "lastOpenFiles": [
+    "单词本/scratch.md",
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+    "单词本/relieve.md",
+    "单词本/prone.md",
     "单词本/notoriously.md",
     "单词本/primitives.md",
     "单词本/coordination.md",
@@ -257,9 +235,6 @@
     "单词本/migrate.md",
     "单词本/legacy.md",
     "单词本/migration.md",
-    "单词本/arbitrarily.md",
-    "单词本/hogs.md",
-    "单词本/facility.md",
     "附件/GFS Architecture.png",
     "附件",
     "内容",
