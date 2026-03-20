@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "9b715498330ef2e6",
+            "id": "e25192ac12e366b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "单词本/primitives.md",
+                "file": "单词本/notoriously.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,54 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "primitives"
-            }
-          },
-          {
-            "id": "0b075d05aeb1b1ed",
-            "type": "leaf",
-            "state": {
-              "type": "Search on Internet",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Translate: primitives"
-            }
-          },
-          {
-            "id": "ecef3386f0750c22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "单词本/coordination.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "coordination"
-            }
-          },
-          {
-            "id": "991efa93db3bbbb3",
-            "type": "leaf",
-            "state": {
-              "type": "Search on Internet",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Translate: coordination"
+              "title": "notoriously"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+                "file": "单词本/notoriously.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +165,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的反向链接列表"
+              "title": "notoriously 的反向链接列表"
             }
           },
           {
@@ -246,12 +203,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+                "file": "单词本/notoriously.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的出链列表"
+              "title": "notoriously 的出链列表"
             }
           }
         ],
@@ -275,10 +232,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a5dcf1238498f152",
+  "active": "e25192ac12e366b3",
   "lastOpenFiles": [
-    "单词本/primitives.md",
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+    "单词本/notoriously.md",
+    "单词本/primitives.md",
     "单词本/coordination.md",
     "内容/Java Timer.md",
     "内容/The Google File System.md",
@@ -302,7 +260,6 @@
     "单词本/arbitrarily.md",
     "单词本/hogs.md",
     "单词本/facility.md",
-    "单词本/utilities.md",
     "附件/GFS Architecture.png",
     "附件",
     "内容",
