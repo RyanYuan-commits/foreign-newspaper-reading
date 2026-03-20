@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b1d8c410303fa435",
+        "id": "2bc3a8aeaae1e1e5",
         "type": "tabs",
         "children": [
           {
-            "id": "a5dcf1238498f152",
+            "id": "09d9fed078c7e5c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -179,7 +179,7 @@
               "type": "outgoing-link",
               "state": {
                 "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
-                "linksCollapsed": false,
+                "linksCollapsed": true,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
@@ -207,14 +207,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a5dcf1238498f152",
+  "active": "09d9fed078c7e5c1",
   "lastOpenFiles": [
-    "单词本/scratch.md",
+    "附件/Pasted image 20260320181736.png",
+    "单词本/ensemble.md",
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+    "单词本/primitives.md",
+    "单词本/parlance.md",
+    "单词本/hierarchal.md",
+    "单词本/scratch.md",
     "单词本/relieve.md",
     "单词本/prone.md",
     "单词本/notoriously.md",
-    "单词本/primitives.md",
     "单词本/coordination.md",
     "内容/Java Timer.md",
     "内容/The Google File System.md",
@@ -231,10 +235,6 @@
     "单词本/underlying.md",
     "单词本/internally.md",
     "单词本/observe.md",
-    "单词本/instant.md",
-    "单词本/migrate.md",
-    "单词本/legacy.md",
-    "单词本/migration.md",
     "附件/GFS Architecture.png",
     "附件",
     "内容",
