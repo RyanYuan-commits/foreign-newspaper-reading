@@ -1,6 +1,6 @@
 {
   "vimMode": true,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "newFileLocation": "folder",
