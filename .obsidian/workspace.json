@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "78dfcb4ea4829aec",
+        "id": "a52874747222647d",
         "type": "tabs",
         "children": [
           {
-            "id": "b123316689cd501e",
+            "id": "f0416ba3af8a7a43",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications"
+              "title": "新标签页"
             }
           }
         ]
@@ -159,7 +145,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +154,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -209,10 +194,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b123316689cd501e",
+  "active": "f0416ba3af8a7a43",
   "lastOpenFiles": [
-    "单词本/deliberately.md",
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+    "单词本/ensemble.md",
+    "单词本/deliberately.md",
     "单词本/captures.md",
     "单词本/diverge.md",
     "单词本/propagated.md",
@@ -228,7 +214,6 @@
     "单词本/[[[[[[[[[[[[[[[[[[[[[[Throughput.md",
     "附件/Pasted image 20260320181811.png",
     "附件/Pasted image 20260320181736.png",
-    "单词本/ensemble.md",
     "单词本/primitives.md",
     "单词本/parlance.md",
     "单词本/hierarchal.md",
