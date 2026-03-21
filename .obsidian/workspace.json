@@ -211,8 +211,9 @@
   },
   "active": "b123316689cd501e",
   "lastOpenFiles": [
-    "单词本/Timeliness.md",
+    "单词本/propagated.md",
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+    "单词本/Timeliness.md",
     "单词本/guarantee.md",
     "单词本/ephemeral.md",
     "单词本/retrieves.md",
@@ -238,7 +239,6 @@
     "内容/Getting Started with the G1 Garbage Collector.md",
     "内容/Class Timer.md",
     "单词本/Responsiveness.md",
-    "单词本/Throughput.md",
     "附件/GFS Architecture.png",
     "附件",
     "内容",

@@ -52,7 +52,6 @@ ZooKeeper is very fast and very simple. Since its goal, though, is to be a basis
 - Reliability - Once an update has been applied, it will persist from that time forward until a client overwrites the update.
 - [[Timeliness]] - The clients view of the system is guaranteed to be up-to-date [[within]] a certain time bound.
 
-
 For more information on these, and how they can be used, see _[tbd]_
 
 ## Simple API
@@ -71,7 +70,7 @@ One of the design goals of ZooKeeper is provide a very simple programming interf
     
 - _get children_ : retrieves a list of children of a node
     
-- _sync_ : waits for data to be propagated
+- _sync_ : waits for data to be [[propagated]]
 
 
 For a more in-depth discussion on these, and how they can be used to implement higher level operations, please refer to _[tbd]_
@@ -82,7 +81,7 @@ For a more in-depth discussion on these, and how they can be used to implement h
 
 ![ZooKeeper Components](https://zookeeper.apache.org/doc/r3.4.14/images/zkcomponents.jpg)
 
-The [[replicated]] database is an in-memory database containing the entire data tree. Updates are logged to disk for recoverability, and writes are serialized to disk before they are applied to the in-memory database.
+The [[replicated]] database is an in-memory database containing the entire data tree. **Updates are logged to disk for recoverability**, and writes are serialized to disk before they are applied to the in-memory database.
 
 Every ZooKeeper server services clients. Clients connect to exactly one server to submit irequests. Read requests are serviced from the local [[replicas|replica]] of each server database. Requests that change the state of the service, write requests, are processed by an agreement protocol.
 
