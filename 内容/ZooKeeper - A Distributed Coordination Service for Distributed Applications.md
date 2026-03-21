@@ -4,7 +4,7 @@ ZooKeeper is a [[distributed]], open-source [[coordination]] service for [[distr
 
 ## Design Goals
 
-**ZooKeeper is simple.** ZooKeeper allows [[distributed]] processes to coordinate with each other through a shared [[hierarchal]] namespace which is organized similarly to a standard file system. The name space consists of data registers - called znodes, in ZooKeeper [[parlance]] - and these are similar to files and directories. Unlike a typical file system, which is designed for storage, ZooKeeper data is kept in-memory, which means ZooKeeper can achieve high [[throughput]] and low latency numbers.
+**ZooKeeper is simple.** ZooKeeper allows [[distributed]] processes to coordinate with each other through a shared [[hierarchal]] namespace which is organized similarly to a standard file system. The name space consists of data registers - called znodes, in ZooKeeper [[parlance]] - and these are similar to files and directories. Unlike a typical file system, which is designed for storage, ==ZooKeeper data is kept in-memory==, which means ZooKeeper can achieve high [[throughput]] and low latency numbers.
 
 The ZooKeeper implementation puts a [[premium]] on high performance, highly available, strictly ordered access. The performance aspects of ZooKeeper means it can be used in large, [[distributed]] systems. The reliability aspects keep it from being a single point of failure. The strict ordering means that [[sophisticated]] synchronization [[primitives]] can be implemented at the client.
 
