@@ -4,7 +4,7 @@ ZooKeeper is a [[distributed]], open-source [[coordination]] service for [[distr
 
 ## Design Goals
 
-**ZooKeeper is simple.** ZooKeeper allows [[distributed]] processes to coordinate with each other through a shared [[hierarchal]] namespace which is organized similarly to a standard file system. The name space consists of data registers - called znodes, in ZooKeeper [[parlance]] - and these are similar to files and directories. Unlike a typical file system, which is designed for storage, ==ZooKeeper data is kept in-memory==, which means ZooKeeper can achieve high [[throughput]] and low latency numbers.
+**ZooKeeper is simple.** ZooKeeper allows [[distributed]] processes to coordinate with each other through a shared [[hierarchal]] namespace which is organized similarly to a standard file system. The name space consists of data registers - called znodes, in ZooKeeper [[parlance]] - and these are similar to files and directories. Unlike a typical file system, which is designed for storage, ZooKeeper data is kept in-memory, which means ZooKeeper can achieve high [[throughput]] and low latency numbers.
 
 The ZooKeeper implementation puts a [[premium]] on high performance, highly available, strictly ordered access. The performance aspects of ZooKeeper means it can be used in large, [[distributed]] systems. The reliability aspects keep it from being a single point of failure. The strict ordering means that [[sophisticated]] synchronization [[primitives]] can be implemented at the client.
 
@@ -22,7 +22,7 @@ Clients connect to a single ZooKeeper server. The client maintains a TCP connect
 
 ## Data model and the hierarchical namespace
 
-The name space provided by ZooKeeper is much like that of a standard file system. A name is a sequence of path elements separated by a [[slash]] (/). Every node in ZooKeeper's name space is [[identify|identified]] by a path.
+The name space provided by ZooKeeper is much like that of a standard file system. A name is a sequence of path elements separated by a slash (/). Every node in ZooKeeper's name space is [[identify|identified]] by a path.
 
 #### ZooKeeper's Hierarchical Namespace
 
@@ -30,13 +30,13 @@ The name space provided by ZooKeeper is much like that of a standard file system
 
 ## Nodes and ephemeral nodes
 
-Unlike standard file systems, each node in a ZooKeeper namespace can have data associated with it as well as children. It is like having a file-system that allows a file to also be a directory. (ZooKeeper was designed to store [[coordination]] data: status information, configuration, location information, etc., so the data stored at each node is usually small, in the byte to kilobyte range.) We use the term _znode_ to make it clear that we are talking about ZooKeeper data nodes.
+Unlike standard file systems, each node in a ZooKeeper namespace can have data associated with it as well as children. It is like having a file-system that allows a file to also be a directory. (ZooKeeper was designed to store [[coordination]] data: status information, configuration, location information, etc., so the data stored at each node is usually small, in the byte to [[kilobyte]] range.) We use the term _znode_ to make it clear that we are talking about ZooKeeper data nodes.
 
-Znodes maintain a stat structure that includes version numbers for data changes, ACL changes, and timestamps, to allow cache validations and coordinated updates. Each time a znode's data changes, the version number increases. For instance, whenever a client retrieves data it also receives the version of the data.
+Znodes maintain a **stat structure** that includes version numbers for data changes, ACL changes, and timestamps, to allow cache validations and coordinated updates. Each time a znode's data changes, the version number increases. For instance, whenever a client [[retrieves]] data it also receives the version of the data.
 
-The data stored at each znode in a namespace is read and written atomically. Reads get all the data bytes associated with a znode and a write replaces all the data. Each node has an Access Control List (ACL) that restricts who can do what.
+The data stored at each znode in a namespace is **read and written atomically**. Reads get all the data bytes associated with a znode and a **write replaces all the data**. Each node has an Access Control List (ACL) that restricts who can do what.
 
-ZooKeeper also has the notion of ephemeral nodes. These znodes exists as long as the session that created the znode is active. When the session ends the znode is deleted. Ephemeral nodes are useful when you want to implement _[tbd]_.
+ZooKeeper also has the notion of [[ephemeral]] nodes. These znodes exists as long as the session that created the znode is active. When the session ends the znode is deleted. Ephemeral nodes are useful when you want to implement _[tbd]_.
 
 ## Conditional updates and watches
 

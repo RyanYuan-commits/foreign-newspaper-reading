@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications"
             }
-          },
-          {
-            "id": "8d14f570b03b3987",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "单词本/coordination.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "coordination"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "42fb14289e632171",
@@ -183,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "单词本/coordination.md",
+                "file": "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +169,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "coordination 的反向链接列表"
+              "title": "ZooKeeper - A Distributed Coordination Service for Distributed Applications 的反向链接列表"
             }
           },
           {
@@ -233,9 +209,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8d14f570b03b3987",
+  "active": "b123316689cd501e",
   "lastOpenFiles": [
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
+    "单词本/ephemeral.md",
+    "单词本/retrieves.md",
+    "单词本/coordination.md",
+    "单词本/kilobyte.md",
     "单词本/slash.md",
     "单词本/dominant.md",
     "单词本/stamps.md",
@@ -250,7 +230,6 @@
     "单词本/relieve.md",
     "单词本/prone.md",
     "单词本/notoriously.md",
-    "单词本/coordination.md",
     "内容/Java Timer.md",
     "内容/The Google File System.md",
     "单词本/aggregate.md",
@@ -260,9 +239,6 @@
     "单词本/Throughput.md",
     "单词本/syntactic.md",
     "单词本/inherently.md",
-    "单词本/handheld.md",
-    "单词本/emulated.md",
-    "单词本/manipulation.md",
     "附件/GFS Architecture.png",
     "附件",
     "内容",
