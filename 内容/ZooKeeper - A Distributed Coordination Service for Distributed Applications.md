@@ -85,17 +85,17 @@ The [[replicated]] database is an in-memory database containing the entire data 
 
 Every ZooKeeper server services clients. Clients connect to exactly one server to submit irequests. Read requests are serviced from the local [[replicas|replica]] of each server database. Requests that change the state of the service, write requests, are processed by an agreement protocol.
 
-As part of the agreement protocol all write requests from clients are forwarded to a single server, called the _leader_. The rest of the ZooKeeper servers, called _followers_, receive message proposals from the leader and agree upon message delivery. The messaging layer takes care of replacing leaders on failures and syncing followers with leaders.
+As part of the agreement protocol **all write requests** from clients are forwarded to a single server, called the _leader_. The rest of the ZooKeeper servers, called _followers_, receive message proposals from the leader and agree upon message delivery. The messaging layer takes care of replacing leaders on failures and syncing followers with leaders.
 
-ZooKeeper uses a custom atomic messaging protocol. Since the messaging layer is atomic, ZooKeeper can [[guarantee]] that the local [[replicas]] never diverge. When the leader receives a write request, it calculates what the state of the system is when the write is to be applied and transforms this into a transaction that captures this new state.
+ZooKeeper uses a custom atomic messaging protocol. Since the messaging layer is atomic, ZooKeeper can [[guarantee]] that the local [[replicas]] never [[diverge]]. When the leader receives a write request, it calculates what the state of the system is when the write is to be applied and transforms this into a transaction that [[captures]] this new state.
 
 ## Uses
 
-The programming interface to ZooKeeper is deliberately simple. With it, however, you can implement higher order operations, such as synchronizations [[primitives]], group membership, ownership, etc. Some [[distributed]] applications have used it to: _[tbd: add uses from white paper and video presentation.]_ For more information, see _[tbd]_
+The programming interface to ZooKeeper is [[deliberately]] simple. With it, however, you can implement higher order operations, such as synchronizations [[primitives]], group membership, ownership, etc. Some [[distributed]] applications have used it to: _[tbd: add uses from white paper and video presentation.]_ For more information, see _[tbd]_
 
 ## Performance
 
-ZooKeeper is designed to be highly performant. But is it? The results of the ZooKeeper's development team at Yahoo! Research indicate that it is. (See [ZooKeeper [[Throughput]] as the Read-Write Ratio Varies](https://zookeeper.apache.org/doc/r3.4.14/zookeeperOver.html#zkPerfRW).) It is especially high performance in applications where reads outnumber writes, since writes involve synchronizing the state of all servers. (Reads outnumbering writes is typically the case for a [[coordination]] service.)
+ZooKeeper is designed to be highly performant. But is it? The results of the ZooKeeper's development team at Yahoo! Research indicate that it is. (See [ZooKeeper Throughput as the Read-Write Ratio Varies](https://zookeeper.apache.org/doc/r3.4.14/zookeeperOver.html#zkPerfRW).) It is especially high performance in applications where reads outnumber writes, since writes involve synchronizing the state of all servers. (Reads outnumbering writes is typically the case for a [[coordination]] service.)
 
 ![ZooKeeper Throughput as the Read-Write Ratio Varies](https://zookeeper.apache.org/doc/r3.4.14/images/zkperfRW-3.2.jpg)
 
