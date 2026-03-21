@@ -22,7 +22,7 @@ Clients connect to a single ZooKeeper server. The client maintains a TCP connect
 
 ## Data model and the hierarchical namespace
 
-The name space provided by ZooKeeper is much like that of a standard file system. A name is a sequence of path elements separated by a slash (/). Every node in ZooKeeper's name space is [[identify|identified]] by a path.
+The name space provided by ZooKeeper is much like that of a standard file system. A name is a sequence of path elements separated by a [[slash]] (/). Every node in ZooKeeper's name space is [[identify|identified]] by a path.
 
 #### ZooKeeper's Hierarchical Namespace
 
