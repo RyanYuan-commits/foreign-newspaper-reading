@@ -50,8 +50,7 @@ ZooKeeper is very fast and very simple. Since its goal, though, is to be a basis
 - Atomicity - Updates either succeed or fail. No partial results.
 - Single System Image - A client will see the same view of the service regardless of the server that it connects to.
 - Reliability - Once an update has been applied, it will persist from that time forward until a client overwrites the update.
-    
-- Timeliness - The clients view of the system is guaranteed to be up-to-date [[within]] a certain time bound.
+- [[Timeliness]] - The clients view of the system is guaranteed to be up-to-date [[within]] a certain time bound.
 
 
 For more information on these, and how they can be used, see _[tbd]_
