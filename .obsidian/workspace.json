@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a52874747222647d",
+        "id": "153b2dcae7d7f760",
         "type": "tabs",
         "children": [
           {
-            "id": "f0416ba3af8a7a43",
+            "id": "20e0ae2c52e37c06",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.12.7"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -195,7 +193,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f0416ba3af8a7a43",
+  "active": "20e0ae2c52e37c06",
   "lastOpenFiles": [
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
     "单词本/ensemble.md",
