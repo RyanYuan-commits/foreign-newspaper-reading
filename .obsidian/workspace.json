@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2b59a8773ee7716c",
+        "id": "e795b6e1910a2bc3",
         "type": "tabs",
         "children": [
           {
-            "id": "a3188a9717dd962e",
+            "id": "04e1517598d95212",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -193,8 +193,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3188a9717dd962e",
+  "active": "04e1517598d95212",
   "lastOpenFiles": [
+    "附件/Pasted image 20260320181811.png",
+    "附件/GFS Architecture.png",
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
     "单词本/ensemble.md",
     "单词本/deliberately.md",
@@ -211,7 +213,6 @@
     "单词本/dominant.md",
     "单词本/stamps.md",
     "单词本/[[[[[[[[[[[[[[[[[[[[[[Throughput.md",
-    "附件/Pasted image 20260320181811.png",
     "附件/Pasted image 20260320181736.png",
     "单词本/primitives.md",
     "单词本/parlance.md",
@@ -222,8 +223,6 @@
     "单词本/notoriously.md",
     "内容/Java Timer.md",
     "内容/The Google File System.md",
-    "单词本/aggregate.md",
-    "附件/GFS Architecture.png",
     "附件",
     "内容",
     "模板",
