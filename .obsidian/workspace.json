@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "153b2dcae7d7f760",
+        "id": "2b59a8773ee7716c",
         "type": "tabs",
         "children": [
           {
-            "id": "20e0ae2c52e37c06",
+            "id": "a3188a9717dd962e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -193,7 +193,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "20e0ae2c52e37c06",
+  "active": "a3188a9717dd962e",
   "lastOpenFiles": [
     "内容/ZooKeeper - A Distributed Coordination Service for Distributed Applications.md",
     "单词本/ensemble.md",
